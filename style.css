@@ -1,0 +1,121 @@
+:root {
+    --clr-primary: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey: hsl(0, 0%, 20%);
+    --clr-darkgrey: hsl(0, 0%, 12%);
+    --clr-offblack: hsl(0, 0%, 8%);
+}
+@font-face { 
+    font-family: "Inter"; 
+    src: url('/assets/fonts/static/Inter-Regular.ttf'); 
+    font-weight: normal;
+}
+@font-face { 
+    font-family: "Inter"; 
+    src: url('/assets/fonts/static/Inter-SemiBold.ttf'); 
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Inter";
+    src: url('/assets/fonts/static/Inter-Bold.ttf');
+    font-weight: 700;
+}
+body, html {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--clr-offblack);
+}
+body {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+}
+
+main {
+    height: 41.643rem;
+    width: 23.357rem;
+    background-color: var(--clr-darkgrey);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+    "img"
+    "info"
+    "buttons"
+    "attributions";
+    grid-template-rows: 155px 105px 288px 38px;
+}
+
+/* IMG */
+.img-wrapper {
+    grid-area: img;
+    justify-self: center;
+    align-self: center;
+}
+img {
+    height: 6.357rem;
+    width: 6.429rem;
+    border-radius: 50%;
+}
+
+/* PERSON INFO */
+.info {
+    grid-area: info;
+}
+
+.info h1 { 
+    color: var(--clr-white); 
+    text-align: center; 
+    font-weight: 700; 
+    font-size: 1.7rem;  
+    margin-top: 0px;
+    letter-spacing: 0.4px;
+}
+
+.info h2 {
+    color: var(--clr-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -0.714rem;
+
+}
+
+.info p { 
+    color: var(--clr-white); 
+    text-align: center; 
+    margin-top: 1.429rem;
+}
+
+
+/* BUTTONS */
+.btns-wrapper {
+    grid-area: buttons;
+}
+
+.button {
+    width: 19.929rem;
+    height: 3.214rem;
+    line-height: 3.214rem;
+    text-align: center;
+    background-color: var(--clr-grey);
+    color: var(--clr-white);
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--clr-primary);
+}
+.button p:hover {
+    color: var(--clr-grey);
+}
+
+.attribution { font-size: 8px; text-align: center; color: var(--clr-white); grid-area: attributions;}
+.attribution a { color: var(--clr-primary); text-decoration: none;}
+.attribution a:hover { font-weight: 600;}
