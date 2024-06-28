@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/BoiWonderr/SocialLinksFM.git)
-- Live Site URL: [](https://boiwonderr.github.io/SocialLinksFM/)
+- Solution URL: [(https://github.com/BoiWonderr/SocialLinksFM.git)]
+- Live Site URL: [(https://boiwonderr.github.io/SocialLinksFM/)]
 
 ## My process
 
